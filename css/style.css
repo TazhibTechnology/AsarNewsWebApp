@@ -1,0 +1,96 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  direction: rtl;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.right-navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img img {
+  width: 48px; /* اندازه تصویر لوگو */
+  height: 48px;
+  margin-right: 10px; /* فاصله بین تصویر لوگو و عنوان */
+}
+
+.logo-title {
+  color: #FC4308;;
+  font-size: 24px;
+}
+
+.navbar-middle ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-middle ul li {
+  margin-right: 20px; /* فاصله بین آیتم‌های منو */
+}
+
+.navbar-middle ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  margin-right: 20px; /* فاصله بین نوار جستجو و دکمه‌ها */
+}
+
+.sign-in-button,
+.save-button {
+  margin-right: 10px; /* فاصله بین دکمه‌ها */
+  cursor: pointer;
+}
+
+.sign-in-name {
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-right,
+  .navbar-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar-middle {
+    margin-bottom: 10px;
+  }
+}
